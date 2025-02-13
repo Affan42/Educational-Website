@@ -1,0 +1,271 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  background-color: black1 !important;
+}
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p, 
+a{
+  margin: 0;
+  font-family: "poppins";
+  text-decoration: none;
+}
+.invisible{
+  display: none !important;
+}
+.courseOverviewContainer{
+  width: 950px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.crs_heading_p{
+  font-size: 35px;
+  font-weight: 600;
+}
+.left_d{
+  margin: 40px 40px 0 0;
+}
+.crs_heading_d{
+  margin-bottom: 15px;
+}
+.crs_det_p{
+  font-size: 17.3px;
+}
+.crs_det_d{
+  margin-bottom: 20px;
+}
+.crs_ex_det_d{
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.crs_less_d,
+.crs_stu_d{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.crs_img{
+  border-radius: 13px;
+  width: 340px;
+
+}
+
+.crs_price_and_dis_d{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin:10px 0  15px 0;
+}
+
+.crs_price_p{
+  font-size: 25px;
+  font-weight: 600;
+}
+.crs_dis_p{
+  font-size: 16px;
+  color: #3a3a3a;
+  text-decoration: line-through;
+}
+.add_to_cart_b{
+  width: 100%;
+  padding: 12px 0;
+  background-color: rgb(112, 30, 166);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add_to_cart_p{
+  font-size: 15px;
+  color: white;
+}
+.money_bck_gte{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  color: #424242;
+  font-size: 13px;
+}
+.cpn_1_d{
+  display: flex;
+  justify-content: space-between;
+}
+.coupons_d{
+  border: 1px solid grey;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+.cpn_1_p{
+  font-size: 12px;
+
+}
+.cpn_1_b_1,
+.cpn_1_b_2, 
+.cpn_1_b_2_for_written_couponCode{
+  padding: 0 12px;
+  background-color: rgb(112, 30, 166);
+  border: none;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+}
+.cpn_1_b_2, 
+.cpn_1_b_2_for_written_couponCode{
+  background-color: rgb(218, 59, 59);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 15px;
+  
+}
+.fa-xmark{
+  font-size: 20px;
+  margin-bottom: 0 !important;
+}
+
+
+.cpn_1_b_1_p{
+  font-size: 12px;
+  color: white;
+}
+.cpn_1_b_2_p{
+font-size: 12.5ps;
+}
+
+.cpn_apply_b{
+  padding: 12px 0;
+  cursor: pointer;
+  background-color: rgb(65, 187, 235);
+  border: none;
+  border-radius: 2px;
+}
+.enter_cpn{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 6fr 2fr;
+
+}
+.cpn_input{
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid rgb(177, 177, 177);
+  padding-left: 20px;
+}
+.cpn_input::placeholder{
+  color: white;
+  font-size: 14px;
+  margin-bottom: -2px;
+}
+.cpn_input:focus{
+outline: none;
+}
+.cpn_apply_b_p{
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: white;
+}
+.cpn_code_right_text,
+.cpn_code_wrong_text,
+.coupon_code_removed_text{
+  font-size: 12px;
+}
+.js_coupon_code_working_text{
+ margin: 12px 0px 12px 20px;
+}
+.cpn_code_right_text{
+  color: rgb(112, 243, 112);
+}
+.cpn_code_wrong_text,
+.coupon_code_removed_text{
+  color: rgb(240, 104, 104);
+}
+
+.p_about_bottom_img_responsive, 
+.p_extra_details_bottom_img_responsive{
+  display: none;
+}
+.crs_stu_d{
+  cursor: pointer;
+  position: relative;
+}
+.crs_stu_d:hover{
+  padding-bottom: 7px;
+  display: flex;
+}
+.students_tool_tip_d{
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  padding: 13px 15px;
+  border-radius: 16px;
+  background-color: rgba(189, 189, 189, 0.7);
+  pointer-events: none;
+  cursor: initial;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.crs_stu_d:hover .students_tool_tip_d{
+  opacity: 1;
+  pointer-events: all;
+}
+.student_names{
+color: black;
+font-size: 12px;
+line-height: 16px;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+@media (max-width: 1000px) {
+.courseOverviewContainer{
+  width: 800px;
+  padding-left: 10px;
+}
+}
+@media (max-width: 850px) {
+.courseOverviewContainer{
+  width: 600px;
+}
+.left_d{
+  display: none;
+}
+.right_d,
+.crs_img{
+  width: 100%;
+}
+.p_about_bottom_img_responsive, 
+.p_extra_details_bottom_img_responsive{
+  display: block;
+}
+.p_about_bottom_img_responsive{
+  margin: 20px 0;
+  font-size: 32px;
+}
+.p_extra_details_bottom_img_responsive{
+  margin: 10px 0 20px 0 ;
+}
+}
+@media (max-width: 760px) {
+  .courseOverviewContainer{
+    width: 500px;
+  }
+  .p_about_bottom_img_responsive{
+  font-size: 29px;
+}
+}
+  @media (max-width: 645px) {
+  .courseOverviewContainer{
+    width: 80vw;
+  }
+  .cpn_1_p{
+    margin-right: 20px;
+  }
+}

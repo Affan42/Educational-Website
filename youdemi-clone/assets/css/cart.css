@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: white !important;
+}
+body {
+  padding: 0;
+  margin-top: 0 !important;
+}
+p,
+a {
+  font-family: poppins;
+  margin: 0;
+  text-decoration: none;
+}
+.c_left_sec_heading_p {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.num_of_courses_p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.c_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.whole_crs_shopping_section {
+  width: 1250px;
+  padding: 0 50px;
+}
+
+.courses_collection_d {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.crs_d {
+  width: 100%;
+  border-top: 1px solid grey;
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+.crs_img {
+  width: 120px;
+}
+.crs_img_d {
+  margin-right: 15px;
+}
+.crs_title {
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 30px;
+}
+.crs_by {
+  font-size: 12.5px;
+  color: #2d2f31;
+}
+.crs_things_like_Xfactor_and_rating_d {
+  display: flex;
+  margin: 15px 8px;
+  gap: 12px;
+  align-items: center;
+}
+.Xfactor_p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2e544e;
+}
+.crs_rating_p {
+  font-size: 11.5px;
+  color: #2d2f31;
+}
+.crs_lectures_hrs_and_all_levels_d {
+  display: flex;
+  gap: 10px;
+}
+.mid_dot_span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgb(221, 221, 221);
+}
+.crs_about {
+  width: 100%;
+}
+
+.crs_hrs_p,
+.crs_lectures_p,
+.crs_all_levels_p {
+  font-size: 11.5px;
+
+  color: #2d2f31;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  white-space: nowrap;
+}
+.crs_Xfactor_d {
+  background-color: #eceb98;
+  padding: 2px 8px 2px 8px;
+}
+.options_cart_crs_and_price_d {
+  display: flex;
+  gap: 70px;
+}
+.crs_img_and_about {
+  display: flex;
+  margin-right: 20px;
+  width: 100%;
+}
+.title_and_responsive_price {
+  display: flex;
+  justify-content: space-between;
+}
+.options_related_to_cart_crs {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+.options_related_to_cart_crs_small_viewport {
+  display: none;
+  margin-top: 10px;
+}
+.remove_p,
+.for_show_btn,
+.remove_p_small_viewport,
+.for_show_btn_small_viewport {
+  font-size: 13.5px;
+  color: #630e9c;
+  white-space: nowrap;
+}
+.remove_p_small_viewport,
+.for_show_btn_small_viewport {
+  font-size: 12.5px;
+}
+.crs_price_d {
+  display: flex;
+  gap: 20px;
+}
+.crs_increased_price {
+  text-decoration: line-through;
+  color: #a2a09d !important;
+}
+.remove_p:hover,
+.for_show_btn:hover,
+.remove_p_small_viewport:hover,
+.for_show_btn_small_viewport:hover {
+  font-size: 13.5px;
+  color: #791db6;
+}
+.remove_p_small_viewport:hover,
+.for_show_btn_small_viewport:hover {
+  font-size: 12.5px;
+}
+.crs_price_p,
+.crs_price_p_small_vw {
+  font-weight: 600;
+  color: #a435f0;
+}
+.crs_price_p_small_vw,
+.crs_increased_price_for_small_vw {
+  display: none;
+}
+.crs_left_and_right_section {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 50px;
+}
+
+.total_details_heading {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.about_discount_d {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.title_and_price_d {
+  display: flex;
+  justify-content: space-between;
+}
+.total_product_price_d,
+.discount_percentage_d,
+.total_discount_d,
+.total_price_d {
+  display: flex;
+  justify-content: space-between;
+}
+.total_discount_p,
+.discount_percentage_p,
+.total_product_price_p {
+  font-size: 15.5px;
+  padding-right: 10px;
+}
+.price_details_d {
+  padding-bottom: 15px;
+  border-bottom: 2px solid grey;
+}
+.total_price_d {
+  margin: 20px 0;
+}
+.order_total_text,
+.order_total_amount {
+  font-size: 18px;
+  font-weight: 500;
+}
+.buy_courses_btn {
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #9f2089 !important;
+}
+.buy_p {
+  font-size: 16.5px;
+  font-weight: 500;
+  color: white;
+}
+.small_vw_div_title_and_price {
+  display: flex;
+  gap: 20px;
+}
+.total_product_price_p,
+.total_product_price_amount,
+.discount_percentage_p,
+.discount_percentage_amount {
+  color: #535353;
+}
+.total_discount_amount,
+.total_discount_p {
+  color: #12946c;
+  white-space: nowrap;
+}
+.courses_collection_d_for_small_vw {
+  display: none;
+}
+.c_left_sec_d_small_vw {
+  display: none;
+}
+.mid_dot_span_for_span_width {
+  display: none;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media (max-width: 1200px) {
+  .options_related_to_cart_crs,
+  .crs_price_d {
+    display: none;
+  }
+  .options_related_to_cart_crs_small_viewport {
+    display: flex;
+    gap: 15px;
+  }
+  .crs_price_p_small_vw,
+  .crs_increased_price_for_small_vw {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .crs_img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 820px) {
+  .crs_left_and_right_section {
+    gap: 30px;
+  }
+  .crs_lectures_hrs_and_all_levels_d {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .crs_things_like_Xfactor_and_rating_d {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .c_left_sec_d {
+    display: none;
+  }
+  .c_left_sec_d_small_vw {
+    display: block;
+  }
+  .crs_left_and_right_section {
+    grid-template-columns: 1fr;
+  }
+  .crs_lectures_hrs_and_all_levels_d {
+    display: flex;
+  }
+  .crs_things_like_Xfactor_and_rating_d {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  .buy_btn_d {
+    border-radius: 3px;
+  }
+}
+@media (max-width: 476px) {
+  .whole_crs_shopping_section {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .crs_lectures_hrs_and_all_levels_d {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .crs_things_like_Xfactor_and_rating_d {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .crs_lectures_hrs_and_all_levels_d {
+    grid-template-columns: auto;
+  }
+  .options_related_to_cart_crs_small_viewport {
+    flex-direction: column;
+  }
+  .crs_title {
+    padding-right: 10px;
+  }
+  .mid_dot_span_for_span_width {
+    display: block;
+  }
+  .whole_crs_shopping_section {
+    padding: 0;
+  }
+}
